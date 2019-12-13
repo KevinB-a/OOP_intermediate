@@ -1,4 +1,4 @@
- """__number_doors pour une variable private ,_number_doors pour une variable protected """
+"""__number_doors pour une variable private ,_number_doors pour une variable protected """
 class Clio () :
     colors = {"noir" : 123456,
               "bleu" : 132456,
@@ -19,8 +19,7 @@ class Clio () :
     def check_price(cls):
         if self.price_range[0]<= cls.price <= self.price_range[1]:
             return cls.price
-        raise ValueError as e :
-            print("the value is not in range")
+        raise ValueError("the value is not in range")
 
     @property
     def number_doors(self):
@@ -30,8 +29,7 @@ class Clio () :
     def number_doors(self, number_doors):
         if number_doors in Clio.doors :
             self.__number_doors = number_doors
-        raise ValueError as e :
-            print("this value is not allowed ")
+        raise ValueError("this value is not allowed ")
     
     @property
     def color_number(self):
@@ -41,8 +39,7 @@ class Clio () :
     def color_number(self, color_number):
         if color_number in Clio.colors.value() :
             self.__color_number = color_number
-        raise ValueError as e :
-            print("this value is not allowed ")
+        raise ValueErrors("this value is not allowed ")
     
     @property
     def color(self):
@@ -52,8 +49,7 @@ class Clio () :
     def color(self):
         if color in Clio.colors.keys() :
             self.__color = color
-        raise ValueError as e :
-            print("this value is not allowed ")
+        raise ValueError("this value is not allowed ")
 
 
     
