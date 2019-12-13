@@ -16,7 +16,7 @@ class Voiture(Vehicule):
     @classmethod
     def check_doors(cls):
         """this method check if number_doors is in doors list"""
-        if self.doors[0] <= cls.number_doors <= self.doors[2]:
+        if Voiture.doors[0] <= cls.number_doors <= Voiture.doors[2]:
             return cls.number_doors
         raise ValueError("the value is not in range")
     
@@ -28,6 +28,6 @@ class Voiture(Vehicule):
     @number_doors.setter
     def number_doors(self, number_doors):
         """the setter method """
-        if number_doors in Vehicule.doors :
+        if number_doors in Voiture.doors :
             self.number_doors = number_doors
         raise ValueError("this value is not allowed ")
