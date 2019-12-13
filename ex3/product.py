@@ -1,3 +1,3 @@
 class Product():
     """ """
-    products = {"product" : price }
+    products = { }
