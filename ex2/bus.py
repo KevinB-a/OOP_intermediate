@@ -4,7 +4,7 @@ class Bus(Vehicule):
     """class Bus inherit from Vehicule """
     floor = [0,1,2]
     def __init__(self):
-        Vehicule.__init__(self)
+        Vehicule.__init__(self, number_floor)
         self.number_floor = number_floor
     
     @classmethod # we define this method as a class method

@@ -1,8 +1,12 @@
 from vehicule import Vehicule
 
 class Voiture(Vehicule):
-    """"""
+    """the class Voiture inherit from Vehicule 
+    this class has one class argument doors , one class method who check if number_doors is
+    good , and get and set method  """
+    
     doors = [3,4,5]
+    
     def __init__(self):
         Vehicule.__init__(self)
         self.number_doors = number_doors
