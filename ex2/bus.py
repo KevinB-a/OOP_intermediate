@@ -22,6 +22,5 @@ class Bus(Vehicule):
     def number_floor(self, number_floor):
         if number_floor in Bus.floor :
             self.__number_floor = number_floor
-        #raise ValueError("this value is not allowed ")
         else :
             self.__number_floor = False

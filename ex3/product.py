@@ -1,3 +1,4 @@
 class Product():
     """ """
-    products = {}
+    def __init__(self):
+        self.products = {}

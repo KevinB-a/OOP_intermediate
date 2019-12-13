@@ -31,6 +31,5 @@ class Voiture(Vehicule):
         """the setter method """
         if number_doors in Voiture.doors :
             self.__number_doors = number_doors
-       # raise ValueError("this value is not allowed ")
         else :
             self.__number_doors = False

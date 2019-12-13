@@ -2,12 +2,12 @@ from person import *
 
 class Employee(Person):
     """ """
-    def __init__(self):
-        Person.__init__(self)
+    def __init__(self, name, last_name, age):
         self.status = ["employé","technicien", "manager", "cadre"]
-
+        super().__init__(name, last_name, age)
     
-    def show_employee_informations(self):
+    def __repr__(self):
+        """method to show  """
         text=" Employee informations  \n\
         name : {} \n\
         last_name : {} \n\
@@ -16,9 +16,13 @@ class Employee(Person):
         "
         print(text.format(self.name, self.last_name, self.age, self.status))
 
-    @classmethod
-    def check_status(cls, employee_status):
-        if employee_status in self.status :
-            return employee_status
-        print("the status of the employee is not referenced")
-                
+    def employee_autorization(self):
+        if self.status[3]>self.status[2] or self.status[3]>self.status[1] or self.status[3]>self.status[0] :
+            return True
+        elif self.status[2]>self.status[1] or self.status[2]>self.status[0] :
+            return True
+        elif self.status[1]>self.status[0]:
+            return True
+        else : 
+            return False
+    
