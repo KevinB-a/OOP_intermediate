@@ -9,6 +9,7 @@ class Customer(Person):
         super().__init__(name, last_name, age)
         product = Product() 
     
+    
     def __repr__(self):
         text=" customer informations  \n\
         name : {} \n\
